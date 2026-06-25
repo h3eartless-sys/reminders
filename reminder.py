@@ -48,7 +48,7 @@ def main():
     for t, msg in REMINDERS.items():
         diff = now_min - to_minutes(t)
         # trimite daca suntem la ora tinta sau pana la 4 minute dupa (toleranta pt intarziere)
-        if 0 <= diff <= 4:
+        if if True:
             send(msg)
             sent = True
     if not sent:
